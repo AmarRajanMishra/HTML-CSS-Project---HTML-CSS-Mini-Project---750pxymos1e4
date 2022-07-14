@@ -43,7 +43,7 @@ class MyHeader extends HTMLElement {
               <li><a href="about.html">About</a></li>
               <li><a href="tags.html">Tags</a></li>
               <li><a href="recipes.html">Recipes</a></li>
-              <li><a href="contact.html"><button type="button">Contact US </button></a></li>
+              <a href="contact.html"><button type="button">Contact US </button></a>
            </ul>
         </nav>
          </div>
@@ -65,7 +65,7 @@ class MyFooter extends HTMLElement {
             <a href="https://www.linkedin.com/in/amar-mishra-860815122/" class="btn">linkedin</a>
         </div>
     
-        <h1 class="credit"> created by <span> Michael </span> 2022 || all rights reserved! </h1>
+        <h1 class="credit"> created by <span> Amar Mishra (Michael) </span> 2022 || all rights reserved! </h1>
     
     </section>
     <script
@@ -106,3 +106,56 @@ for(let i=0; i < menuLength; i++){
         menuItem[i].className = "active"
     }
 }
+
+class MyRecipeCard extends HTMLElement {
+    connectedCallback() {
+        this.innerHTML =`<div class="recipes-list">
+        <!-- single recipe -->
+        <a href="#" class="recipe">
+          <img
+            src="images/g-6.jpg"
+            class="img recipe-img"
+            alt=""
+          />
+          <h5>Carne Asada</h5>
+          <p>Prep : 15min | Cook : 5min</p>
+        </a>
+        <!-- end of single recipe -->
+        <!-- single recipe -->
+        <a href="#" class="recipe">
+          <img
+            src="images/g-3.jpg"
+            class="img recipe-img"
+            alt=""
+          />
+          <h5>Greek Ribs</h5>
+          <p>Prep : 15min | Cook : 5min</p>
+        </a>
+        <!-- end of single recipe -->
+        <!-- single recipe -->
+        <a href="#" class="recipe">
+          <img
+            src="images/g-4.jpg"
+            class="img recipe-img"
+            alt=""
+          />
+          <h5>Vegetable Soup</h5>
+          <p>Prep : 15min | Cook : 5min</p>
+        </a>
+        <!-- end of single recipe -->
+        <!-- single recipe -->
+        <a href="#" class="recipe">
+          <img
+            src="images/g-5.jpg"
+            class="img recipe-img"
+            alt=""
+          />
+          <h5>Banana Pancakes</h5>
+          <p>Prep : 15min | Cook : 5min</p>
+        </a>
+        <!-- end of single recipe -->
+      </div>`
+    
+    }
+}
+customElements.define('my-recipe-card', MyRecipeCard)

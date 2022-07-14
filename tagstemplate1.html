@@ -1,71 +1,20 @@
-
-
 <my-header></my-header>
 <h1 class="tagtemplate">Beef</h1>
-<section class="recipes-container">
+<section
+    class="recipes-container">
     <!-- tag container -->
     <my-recipe></my-recipe>
     <!-- end of tag container -->
     <!-- recipes list -->
-    <div class="recipes-list">
-      <!-- single recipe -->
-      <a href="#" class="recipe">
-        <img
-          src="images/g-6.jpg"
-          class="img recipe-img"
-          alt=""
-        />
-        <h5>Carne Asada</h5>
-        <p>Prep : 15min | Cook : 5min</p>
-      </a>
-      <!-- end of single recipe -->
-      <!-- single recipe -->
-      <a href="#" class="recipe">
-        <img
-          src="images/g-3.jpg"
-          class="img recipe-img"
-          alt=""
-        />
-        <h5>Greek Ribs</h5>
-        <p>Prep : 15min | Cook : 5min</p>
-      </a>
-      <!-- end of single recipe -->
-      
-      <!-- single recipe -->
-      <a href="#" class="recipe">
-        <img
-          src="images/g-4.jpg"
-          class="img recipe-img"
-          alt=""
-        />
-        <h5>Vegetable Soup</h5>
-        <p>Prep : 15min | Cook : 5min</p>
-      </a>
-      <!-- end of single recipe -->
-
-      <!-- single recipe -->
-      <a href="#" class="recipe">
-        <img
-          src="images/g-5.jpg"
-          class="img recipe-img"
-          alt=""
-        />
-        <h5>Banana Pancakes</h5>
-        <p>Prep : 15min | Cook : 5min</p>
-      </a>
-      <!-- end of single recipe -->
-    </div>
+    <my-recipe-card></my-recipe-card>
     <!-- end of recipes list -->
-  </section>
+</section>
 <!-- footer section  -->
 <my-footer></my-footer>
 <script type="text/javascript" src="headfoot.js"></script>
 <script>
-  var preloader=document.getElementById('loading');
-  window.addEventListener("load",function(){
-    preloader.style.display="none";
-  })
-  // function myFunction(){
-  //   preloader.style.display='none';
-  // }
+    var preloader = document.getElementById('loading');
+    window.addEventListener("load", function () {
+        preloader.style.display = "none";
+    })
 </script>
