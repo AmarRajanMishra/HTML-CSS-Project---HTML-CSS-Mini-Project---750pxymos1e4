@@ -57,11 +57,11 @@ class MyFooter extends HTMLElement {
         this.innerHTML =`<section class="footer">
 
         <div class="share">
-            <a href="#" class="btn">facebook</a>
-            <a href="#" class="btn">twitter</a>
-            <a href="#" class="btn">instagram</a>
-            <a href="#" class="btn">pinterest</a>
-            <a href="#" class="btn">linkedin</a>
+            <a href="https://www.facebook.com/amar.mishra.5832343" class="btn">facebook</a>
+            <a href="https://twitter.com/RajanAmar999" class="btn">twitter</a>
+            <a href="https://www.instagram.com/amar__rajan/?hl=en" class="btn">instagram</a>
+            <a href="https://in.pinterest.com/amar1998fzd/" class="btn">pinterest</a>
+            <a href="https://www.linkedin.com/in/amar-mishra-860815122/" class="btn">linkedin</a>
         </div>
     
         <h1 class="credit"> created by <span> Michael </span> 2022 || all rights reserved! </h1>
