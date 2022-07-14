@@ -88,10 +88,10 @@ class MyRecipe extends HTMLElement {
         this.innerHTML =`<div class="tags-container">
         <h4>Recipes</h4>
         <ol class="gradient-list">
-          <li><a href="#" class="btn">Beef (4)</a></li>
-          <li><a href="#" class="btn">Breakfast (1)</a></li>
-          <li><a href="#" class="btn">Lunch (3)</a></li>
-          <li><a href="#" class="btn">Dinner (2)</a></li></ol>
+          <li><a href="tagstemplate1.html" class="btn">Beef (4)</a></li>
+          <li><a href="tagstemplate2.html" class="btn">Breakfast (1)</a></li>
+          <li><a href="tagstemplate3.html" class="btn">Lunch (3)</a></li>
+          <li><a href="tagstemplate4.html" class="btn">Dinner (2)</a></li></ol>
       </div>`
     
     }
