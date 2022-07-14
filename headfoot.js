@@ -78,8 +78,6 @@ customElements.define('my-footer', MyFooter)
 class MyRecipe extends HTMLElement {
     connectedCallback() {
         this.innerHTML =`<div class="tags-container">
-     
-  
         <h4>Recipes</h4>
         <ol class="gradient-list">
           <li><a href="#" class="btn">Beef (4)</a></li>
