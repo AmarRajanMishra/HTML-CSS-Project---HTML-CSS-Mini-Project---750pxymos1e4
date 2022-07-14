@@ -39,7 +39,7 @@ class MyHeader extends HTMLElement {
            <i class="fas fa-bars"></i>
            </label>
            <ul>
-              <li><a class="active" href="home.html">Home</a></li>
+              <li class="active"><a href="home.html">Home</a></li>
               <li><a href="about.html">About</a></li>
               <li><a href="tags.html">Tags</a></li>
               <li><a href="recipes.html">Recipes</a></li>
@@ -68,6 +68,13 @@ class MyFooter extends HTMLElement {
         <h1 class="credit"> created by <span> Michael </span> 2022 || all rights reserved! </h1>
     
     </section>
+    <script
+  src="https://code.jquery.com/jquery-3.6.0.js"></script>
+  <script>
+  $(document).on('click','ul li',function(){
+$(this).addClass('active').siblings().removeClass('active')
+  })
+  </script>
 
    </body>
 </html>`
@@ -91,11 +98,11 @@ class MyRecipe extends HTMLElement {
 }
 customElements.define('my-recipe', MyRecipe)
 
-// const currentLocation = location.href;
-// const menuItem = document.querySelectorAll('a');
-// const menuLength = menuItem.length;
-// for(let i=0; i < menuLength; i++){
-//     if(menuItem[i].href===currentLocation){
-//         menuItem[i].className = "active"
-//     }
-// }
+const currentLocation = location.href;
+const menuItem = document.querySelectorAll('a');
+const menuLength = menuItem.length;
+for(let i=0; i < menuLength; i++){
+    if(menuItem[i].href===currentLocation){
+        menuItem[i].className = "active"
+    }
+}

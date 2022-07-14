@@ -81,45 +81,7 @@
    
   }
 
-  @media(max-width:1570px){
-    section{
-        padding: 80px 3%;
-        transition: .2s;
-
-    }
-   
-   
-    .contact-form h1{
-        font-size: 60px;
-
-    }
-    .contact-form p{
-        margin-bottom: 3rem;
-    }
-}
-@media(max-width:1090px){
-    .contact{
-        grid-gap:2rem;
-        transition: .3s;
-    }
-
-}
-@media(max-width:1000px){ 
-    .contact{
-        grid-template-columns: 1fr;
-    }
-    .contact-form{
-        order: 2;
-    }
-    .contact-img img{
-        max-width: 100%;
-        width: 100%;
-        height: auto;
-        text-align: center;
-        margin-bottom: 30px;
-
-    }
-}
+  
   /* Responsive Css End Here */
 
   
@@ -218,6 +180,7 @@ nav ul{
 }
 nav ul li{
   margin: 0 5px;
+  text-align: -webkit-center;
 }
 nav ul li a{
   color: #f2f2f2;
@@ -233,6 +196,7 @@ nav ul li a.active,
 nav ul li a:hover{
   color: white;
   background: #ea1538;
+  width: 50%;
 }
 nav .menu-btn i{
   color: #fff;
@@ -274,6 +238,9 @@ input[type="checkbox"]{
       width: 100%;
       margin: 40px 0;
     }
+nav ul li a:active{
+  width: 50%;
+}
     nav ul li a{
       width: 100%;
       margin-left: -100%;
@@ -284,7 +251,7 @@ input[type="checkbox"]{
     #click:checked ~ ul li a{
       margin-left: 0px;
     }
-    nav ul li a.active,
+   
     nav ul li a:hover{
       background: none;
       color: #ea1538;
@@ -627,6 +594,45 @@ color:#ea1538;
       background: transparent;
       transform: scale(1.1);
   }
+  @media(max-width:1570px){
+    section{
+        padding: 80px 3%;
+        transition: .2s;
+
+    }
+   
+   
+    .contact-form h1{
+        font-size: 60px;
+
+    }
+    .contact-form p{
+        margin-bottom: 3rem;
+    }
+}
+@media(max-width:1090px){
+    .contact{
+        grid-gap:2rem;
+        transition: .3s;
+    }
+
+}
+@media(max-width:1000px){ 
+    .contact{
+        grid-template-columns: 1fr;
+    }
+    .contact-form{
+        order: 2;
+    }
+    .contact-img img{
+        max-width: 100%;
+        width: 100%;
+        height: auto;
+        text-align: center;
+        margin-bottom: 30px;
+
+    }
+}
   /* Contact Page Css End Here */
 
 
