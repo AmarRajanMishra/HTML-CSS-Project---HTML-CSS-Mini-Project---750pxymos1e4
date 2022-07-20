@@ -140,7 +140,7 @@ header{
 }
 
 .homepage{
-   background-image: linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.6)),url(images/g-1.jpg);
+   background-image: linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.6)),url(../images/g-1.jpg);
    background-size:cover;
    background-position:center;
    height:50vh;
@@ -713,7 +713,7 @@ color:#ea1538;
         padding:2.5rem 1rem;
         color:#fff;
         font-weight: normal;
-        font-size: 2rem;
+        font-size: 1rem;
       }
       
       .footer .credit span{
